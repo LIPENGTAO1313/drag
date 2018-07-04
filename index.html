@@ -3,12 +3,24 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
-	<style type="text/css">
-		#div1{}
-	</style>
-	<script type="text/javascript" src="index.js"></script>
 </head>
 <body>
-	<div id="div1">111</div>
+	<script>
+	var b =[],c=[];
+		for(var i=0;i<10;i++) {
+			let a = i;
+			b[i] = function() {
+				console.log(a);
+			}
+		}
+		b[4]();
+		for(var j=0;j<10;j++) {
+			var d = j;
+			c[j] = function() {
+				console.log(d);
+			}
+		}
+		c[4]();
+	</script>
 </body>
 </html>
